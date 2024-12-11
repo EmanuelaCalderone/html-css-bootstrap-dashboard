@@ -12,13 +12,3 @@ body{
 .navbar-brand img{
     max-width:100%;
 }
-
-table .btn{
-    padding:0 2px;
-}
-
-.card .btn{
-    background-color:white;
-    border:none;
-    color:black;
-}
