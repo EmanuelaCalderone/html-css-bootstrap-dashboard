@@ -13,9 +13,26 @@ body{
     max-width:100%;
 }
 
+/*icone azioni tabella*/
 table td button{
     background-color:transparent;
     border:1px  solid grey;
     color:grey;
+}
 
+/*testo sezione todo*/
+label{
+    color:grey;
+}
+
+/*sezione f.a.q.*/
+.card.faq button{
+    border:none;
+    background-color:white;
+    color:grey;
+    font-size:12px;
+}
+
+.card.faq button:active{
+    background-color:transparent;
 }
