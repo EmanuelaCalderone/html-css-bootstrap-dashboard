@@ -1,7 +1,9 @@
+/*blocco logo*/
 .navbar-brand{
     width:10%;
 }
 
+/*immagine logo*/
 .navbar-brand img{
     max-width:100%;
 }
