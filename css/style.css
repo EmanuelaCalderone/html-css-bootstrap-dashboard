@@ -12,3 +12,10 @@ body{
 .navbar-brand img{
     max-width:100%;
 }
+
+table td button{
+    background-color:transparent;
+    border:1px  solid grey;
+    color:grey;
+
+}
