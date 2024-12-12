@@ -1,12 +1,13 @@
 body{
     font-family:"Roboto";
-    font-size:12px;
+    font-size:13px;
 }
+
 /*NAVBAR*/
 
 /*blocco logo*/
-.navbar-brand{
-    width:30px;
+a.navbar-brand{
+    width:40px;
 }
 
 /*immagine logo*/
@@ -14,8 +15,13 @@ body{
     max-width:100%;
 }
 
-/*testo navbar*/
-.nav-item a{
+/*link "catalogo libri*/
+.navbar-nav .nav-item:first-child .nav-link{
+    color:white;
+}
+
+/*hover su link navbar*/
+.navbar-nav .nav-item:hover{
     color:white;
 }
 
@@ -24,23 +30,56 @@ body{
     background-color:white;
 }
 
-.btn .btn-outline{
+/*colore testo placeholder "cerca"*/
+.form-control::placeholder {
+    color: gray;
+}
+
+/*pulsante navbar "cerca"*/
+.btn.btn-outline{
+    border:1px solid white;
+}
+
+/*hover pulsante navbar "cerca"*/
+.btn.btn-outline:hover{
     background-color:white;
+    border:1px solid black;
+}
+
+/*titoli*/
+h3, h4{
+    font-weight:normal;
+}
+
+/*colore testo tabella*/
+.table > :not(caption) > * > *{
+    color:grey;
+}
+
+/*th della tabella*/
+.table th{
+    color:black;
 }
 
 /*icone azioni tabella*/
 table td button{
     background-color:transparent;
     border:1px  solid grey;
+    border-radius:20%;
     color:grey;
+}
+
+/*hover su icone azioni tabella*/
+table td button:hover{
+    background-color:darkgrey;
+}
+
+/*testo del badge giallo*/
+span.badge.text-bg-warning{
+    color:white !important;
 }
 
 /*testo sezioni todo e faq*/
-label, .accordion-button.collapsed{
-    color:grey;
-}
-
-/*accordion*/
-.accordion{
-    padding:10px;
+.accordion-button.collapsed{
+    font-size:13px;
 }
