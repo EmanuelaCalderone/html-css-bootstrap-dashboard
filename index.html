@@ -14,13 +14,12 @@
   </head>
 
   <body>
-    <!--container principale-->
-    <div class="container-sm">
+
       <!--row con una colonna con navbar-->
       <div class="row">
         <div class="col-sm-12">
           <!--navbar-->
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body mb-4" data-bs-theme="dark">
             <div class="container-fluid">
               <!--logo-->
               <a class="navbar-brand" href="#">
@@ -32,7 +31,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                    <a class="nav-link" aria-current="page" href="#">Catalogo libri</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Anagrafica utenti</a>
@@ -48,7 +47,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Cerca</button>
+                  <button class="btn btn-outline" type="submit">Cerca</button>
                 </form>
               </div>
             </div>
@@ -56,9 +55,11 @@
         </div>
       </div>
 
-      <!--"catalogo libri con pulsante "aggiungi libro"-->
-      <div class="row">
-        <div class="col-sm-12 col-lg-8">
+      <!--container principale-->
+      <div class="container-sm">
+        <!--"catalogo libri con pulsante "aggiungi libro"-->
+        <div class="row">
+        <div class="col-sm-12 col-lg-9">
           <div class="row">
 
             <!--"catalogo libri"-->
@@ -345,7 +346,7 @@
       </div>
 
       <!--seconda colonna con una riga con due div-->
-      <div class="col-sm-12 col-lg-4">
+      <div class="col-sm-12 col-lg-3">
         <div class="row">
           <!--to do list-->
           <div class="card border-secondary mb-3">
@@ -369,19 +370,46 @@
           </div>
           
           <!--F.A.Q. section-->
-            <div class="card faq">
+            <div class="card">
               <div class="card-header"> <h6>F.A.Q.</h6></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Come aggiungere un nuovo libro? </button>
-                </li>
-                <li class="list-group-item">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Come posso accedere all'anagrafica utenti? </button>
-                </li>
-                <li class="list-group-item">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Posso usare questa dashboard da mobile? </button>
-                </li>
-              </ul>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Come aggiungere un nuovo libro?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Come posso accedere all'anagrafica utenti?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
       </div>

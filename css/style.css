@@ -2,6 +2,7 @@ body{
     font-family:"Roboto";
     font-size:12px;
 }
+/*NAVBAR*/
 
 /*blocco logo*/
 .navbar-brand{
@@ -13,6 +14,20 @@ body{
     max-width:100%;
 }
 
+/*testo navbar*/
+.nav-item a{
+    color:white;
+}
+
+/*navbar - cerca*/
+.form-control{
+    background-color:white;
+}
+
+.btn .btn-outline{
+    background-color:white;
+}
+
 /*icone azioni tabella*/
 table td button{
     background-color:transparent;
@@ -20,19 +35,12 @@ table td button{
     color:grey;
 }
 
-/*testo sezione todo*/
-label{
+/*testo sezioni todo e faq*/
+label, .accordion-button.collapsed{
     color:grey;
 }
 
-/*sezione f.a.q.*/
-.card.faq button{
-    border:none;
-    background-color:white;
-    color:grey;
-    font-size:12px;
-}
-
-.card.faq button:active{
-    background-color:transparent;
+/*accordion*/
+.accordion{
+    padding:10px;
 }
